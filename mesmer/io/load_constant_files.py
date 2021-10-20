@@ -117,8 +117,8 @@ def calc_geodist_exact(lon, lat):
 
 def load_phi_gc(lon, lat, ls, cfg, L_start=1500, L_end=10000, L_interval=250):
     """
-    Loads or creates (if not available yet) distance matrix and Gaspari-Cohn correlation
-    matrix.
+    Loads or creates (if not available yet) the distance matrix and derives the
+    corresponding Gaspari-Cohn correlatio matrix.
 
     Parameters
     ----------
