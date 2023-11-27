@@ -30,7 +30,7 @@ jobs:
           ${{ runner.os }}-conda-py${{ matrix.python-version }}-${{
           hashFiles('environment.yml') }}
     - name: Setup conda
-      uses: conda-incubator/setup-miniconda@v2
+      uses: conda-incubator/setup-miniconda@v3
       with:
         channels: conda-forge
         channel-priority: strict
@@ -71,7 +71,7 @@ jobs:
         key:
           ${{ runner.os }}-conda-py${{ matrix.python-version }}-${{ hashFiles('environment.yml') }}
     - name: Setup conda
-      uses: conda-incubator/setup-miniconda@v2
+      uses: conda-incubator/setup-miniconda@v3
       with:
         channels: conda-forge
         channel-priority: strict
